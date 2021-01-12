@@ -1,0 +1,59 @@
+html {
+    background-color: rgb(187, 217, 238);
+}
+
+header, nav {
+    text-align: center;
+}
+
+h1 {
+    font-family: Georgia;
+    font-weight: normal;
+}
+
+h3 {
+    counter-reset: cant-productos;
+}
+
+.azul {
+    color: blue;
+}
+
+span.primeraletra{
+    color: black;
+    font-size: 80px;
+}
+
+p.vida::first-line{
+    color: red;
+}
+
+p.productos::before {
+    content: counter(cant-productos) ". ";
+    counter-increment: cant-productos;
+}
+
+p.pie {
+    font-style: italic;
+}
+
+p span:hover {
+    background-color: yellow;
+    color: red;
+}
+
+a{
+    font-size: 25px;
+    background-color: white;
+    color: blue;
+}
+
+a:visited{
+    background-color: blue;
+    color: white;
+}
+
+img {
+    float: right;
+    width: 430px;
+}
